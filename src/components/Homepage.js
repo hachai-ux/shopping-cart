@@ -1,8 +1,18 @@
+import header from "../images/Tafelschokolade_Mood_Allgemein.jpeg";
+import { Link } from 'react-router-dom';
+
 const Homepage = () => {
     return (
-        <div>
-            <h1>Hello from Homepage</h1>
+        <div className="homepage">
+            <h1>Goldhelm Schokolade</h1>
+            <img width="500" src={header}></img>
+            <button>
+            <Link to='/shop'>Shop</Link>
+            </button>
+            
+            
         </div>
+        
     );
 };
 

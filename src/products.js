@@ -10,7 +10,6 @@ export const products =
 [
     {
         "id": 1,
-        "clicked" : false,
         "name": "WEISSE SCHOKOLADE - DREI NÜSSE FÜR ASCHENBRÖDEL",
         "description": "Weiße Schokolade Südamerika | Kakao: 38% mindestens",
         "price": "100 g | 7,50 €",
@@ -18,7 +17,6 @@ export const products =
       },
       {
         "id": 2,
-        "clicked" : false,
         "name": "DUNKLE SCHOKOLADE - GANZE HASELNÜSSE",
         "description": "Dunkle Grand Cru Dschungelschokolade | Kakao: 73%",
         "price": "100 g | 7,50 €",
@@ -26,7 +24,6 @@ export const products =
       },
        {
         "id": 3,
-        "clicked" : false,
         "name": "GEMISCHTE SCHOKOLADE - ROSALIE & TRÜFFELCHEN ",
         "description": "Dunkle und weiße Schokolade mit Himbeeren | Kakao: 73%",
         "price": "100 g | 7,80 €",

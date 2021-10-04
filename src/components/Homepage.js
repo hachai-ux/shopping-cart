@@ -5,7 +5,7 @@ const Homepage = () => {
     return (
         <div className="homepage">
             <h1>Goldhelm Schokolade</h1>
-            <img width="500" src={header}></img>
+            <img width="500" alt='Goldhelm Schokolade Header'src={header}></img>
             <button>
             <Link to='/shop'>Shop</Link>
             </button>

@@ -1,59 +1,29 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext} from "react";
 import { products } from "../products";
 import { Link } from "react-router-dom";
 import ShopItems from "./ShopItems";
+import { CartContext } from "../context/Context";
 
 const Shop = () => {
 
-    const [cartItems, setCartItems] = useState([]);
-    const [shopItems, setShopItems] = useState(products);
+    const contextValue = useContext(CartContext);
+    const { cartState } = contextValue;
     const [cartItemsQuantity, setCartItemsQuantity] = useState(0);
 
-
-    const addToCart = (item, quantity, e) => {
-        e.preventDefault();
-        let itemExists = false;
-
-
-        for (let i = 0; i < cartItems.length; i++) {
-            if (cartItems[i].id === item.id) {
-                itemExists = true;
-            }
-        };
-        if (itemExists === true) {
-            setCartItems(cartItems.map(cartItem => {
-                if (cartItem.id === item.id) {
-                    cartItem.quantity = cartItem.quantity + quantity;
-                }
-                return cartItem;
-
-            }));
-        }
-
-        else if (itemExists === false) {
-            const tempItem = item;
-            tempItem.quantity = quantity;
-            const newCartItems = cartItems.concat(tempItem);
-            setCartItems(newCartItems);
-        
-            };
-        
-    };
     
     useEffect(() => {
-        if (cartItems.length > 0) {
-            const itemsQuantity = cartItems.reduce((prevItem, currItem) => prevItem + currItem.quantity, 0);
+        if (cartState.length > 0) {
+            const itemsQuantity = cartState.reduce((prevItem, currItem) => prevItem + currItem.quantity, 0);
             setCartItemsQuantity(itemsQuantity);
         }
         
-    }, [cartItems]);
+    }, [cartState]);
     
   
 
-    const shopItemsCollection = shopItems.map((item) => {
+    const shopItemsCollection = products.map((item) => {
         return <ShopItems
             //pass item into handleSubmit function
-            addToCart={addToCart}
             id={item.id}
             key={item.id}
             image={item.image}

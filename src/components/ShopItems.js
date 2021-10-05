@@ -1,9 +1,10 @@
-import React, {useState} from "react";
+import React, { useState, useContext } from "react";
+import { CartContext } from "../context/Context";
 
 
 const ShopItems = (props) => {
 
-
+ 
     return (
         <div className="shop-item">
             <div className="img-container">
@@ -19,7 +20,7 @@ const ShopItems = (props) => {
                         <strong>{props.price}</strong>
                     </li>
                 </ul>
-                <AddItemQuantity item={props.item} addToCart={props.addToCart} />
+                <AddItemQuantity item={props.item} />
             </div>
           
         </div>
@@ -27,6 +28,11 @@ const ShopItems = (props) => {
 }
 
 const AddItemQuantity = (props) => {
+
+    const contextValue = useContext(CartContext);
+    const { dispatch } = contextValue;
+
+
        const [quantity, setQuantity] = useState(0);
 
     const incrementQuantity = () => {
@@ -50,7 +56,14 @@ const AddItemQuantity = (props) => {
 
     return (
         <div className="add-item-quantity">
-            <form onSubmit={(e)=>props.addToCart(props.item, quantity, e)}>
+            <form onSubmit={(e) => dispatch({
+                type: "ADD_TO_CART",
+                payload: {
+                    item: props.item,
+                    quantity: quantity,
+                    event: e
+                }
+                })}>
                 <button onClick={decrementQuantity} type="button">-</button>
                 <label htmlFor="item-quantity"></label>
                 <input type="number" name="item-quantity" min="0" max="99999" value={quantity} onChange={handleChange}></input>

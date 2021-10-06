@@ -56,6 +56,7 @@ const AddItemQuantity = (props) => {
 
     return (
         <div className="add-item-quantity">
+            {/* Use dispatch function to change cart state */}
             <form onSubmit={(e) => dispatch({
                 type: "ADD_TO_CART",
                 payload: {

@@ -12,6 +12,7 @@ const Shop = () => {
 
     
     useEffect(() => {
+        //change cart display when cart state changes
         if (cartState.length > 0) {
             const itemsQuantity = cartState.reduce((prevItem, currItem) => prevItem + currItem.quantity, 0);
             setCartItemsQuantity(itemsQuantity);
@@ -22,6 +23,7 @@ const Shop = () => {
   
 
     const shopItemsCollection = products.map((item) => {
+        //show each shop item from product.js
         return <ShopItems
             //pass item into handleSubmit function
             id={item.id}
@@ -52,7 +54,3 @@ const Shop = () => {
 
 
 export default Shop;
-
-//backlog:
-//add items to cart
-//show item number in cart

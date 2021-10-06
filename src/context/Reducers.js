@@ -1,7 +1,8 @@
 export const cartReducer = (cartState, action) => {
+    
     switch (action.type) {
         case "ADD_TO_CART":
-
+            //add item quantity into cart
             action.payload.event.preventDefault();
             let itemExists = false;
 
@@ -32,6 +33,7 @@ export const cartReducer = (cartState, action) => {
             break;
         
         case "REMOVE_FROM_CART":
+            //functionality not implemented yet
             return cartState.filter(item => item.id !== action.payload.id);
 
 

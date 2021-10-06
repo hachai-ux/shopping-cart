@@ -1,4 +1,4 @@
-import { BrowserRouter, Switch, Route} from "react-router-dom";
+import { HashRouter, Switch, Route} from "react-router-dom";
 import Nav from "./components/Nav";
 import Homepage from "./components/Homepage";
 import Shop from "./components/Shop";
@@ -7,7 +7,7 @@ import Cart from "./components/Cart";
 
 const Routes = () => {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Nav />
             <Switch>
                 <Route exact path="/">
@@ -20,7 +20,7 @@ const Routes = () => {
                     <Cart />
                 </Route>
             </Switch>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 

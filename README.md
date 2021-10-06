@@ -2,4 +2,4 @@
 
 Practice Routers and Hooks
 
-Use Contex and UseReducer for state management
+Use Context and UseReducer for state management

@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.8d2faf37.chunk.css",
+    "main.js": "/shopping-cart/static/js/main.c6996998.chunk.js",
+    "main.js.map": "/shopping-cart/static/js/main.c6996998.chunk.js.map",
+    "runtime-main.js": "/shopping-cart/static/js/runtime-main.c3c4442c.js",
+    "runtime-main.js.map": "/shopping-cart/static/js/runtime-main.c3c4442c.js.map",
+    "static/js/2.083f25b4.chunk.js": "/shopping-cart/static/js/2.083f25b4.chunk.js",
+    "static/js/2.083f25b4.chunk.js.map": "/shopping-cart/static/js/2.083f25b4.chunk.js.map",
+    "index.html": "/shopping-cart/index.html",
+    "static/css/main.8d2faf37.chunk.css.map": "/shopping-cart/static/css/main.8d2faf37.chunk.css.map",
+    "static/js/2.083f25b4.chunk.js.LICENSE.txt": "/shopping-cart/static/js/2.083f25b4.chunk.js.LICENSE.txt",
+    "static/media/Tafel_ganze_Haseln-sse_Piemonteser_dunkelP3Nfwxpd9C9zz_200x200@2x.789e5a96.webp": "/shopping-cart/static/media/Tafel_ganze_Haseln-sse_Piemonteser_dunkelP3Nfwxpd9C9zz_200x200@2x.789e5a96.webp",
+    "static/media/Tafelschokolade_Mood_Allgemein.5ae16c71.jpeg": "/shopping-cart/static/media/Tafelschokolade_Mood_Allgemein.5ae16c71.jpeg",
+    "static/media/Tafelschokolade_Rosalie-und_Tr-ffelchen_NEU_200x200@2x.43fbbe7d.webp": "/shopping-cart/static/media/Tafelschokolade_Rosalie-und_Tr-ffelchen_NEU_200x200@2x.43fbbe7d.webp",
+    "static/media/Tafelschokolade_Weisse_Drei_N-sse56616af5804cf_200x200@2x.a8573f08.webp": "/shopping-cart/static/media/Tafelschokolade_Weisse_Drei_N-sse56616af5804cf_200x200@2x.a8573f08.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c3c4442c.js",
+    "static/js/2.083f25b4.chunk.js",
+    "static/css/main.8d2faf37.chunk.css",
+    "static/js/main.c6996998.chunk.js"
+  ]
+}
